@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明月晴岚</title>
+    <link rel="stylesheet" href="./css/styles.css">
+   </head>
+<body>
+    <canvas class="particles" id="particles"></canvas>
+    <img src="images/avatar.jpg" class="avatar" alt="头像">
+    <div class="welcome-text">网站未开放</div>
+
+    <div class="music-container">
+        <div class="music-player" onclick="toggleMusic(this)"></div>
+    </div>
+    <audio id="bgm" loop autoplay>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="menu-container">
+        <div class="menu-btn" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dropdown-menu" id="menu">
+            <a href="#"><span>🏠</span>首页</a>
+            <a href="#"><span>📖</span>关于</a>
+            <a href="#"><span>🎨</span>作品</a>
+            <a href="#"><span>📧</span>联系</a>
+        </div>
+    </div>
+    <script src="./script/app.js"></script>
+</body>
+</html>
